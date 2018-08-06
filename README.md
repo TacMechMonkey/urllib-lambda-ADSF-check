@@ -11,7 +11,4 @@ To confirm character count and server names, run the script once and pull detail
 
 Still needs: URL/HTTPError.code + .reason in exception handling.
 
-Have run through IDLE no probs (comment out from "message = sns.publish..", print lines notificationheader and \
-notificationbody, add pagecheck() to end. pagecheck() should/will be main().
-
-Will update once run through Lambda. Shortly.
+Runs locally no probs, known issue with Lambda/SNS however: produces 2 emails for failures - https://stackoverflow.com/questions/51705061/lambda-boto3-python-issue
