@@ -10,8 +10,8 @@ Requirements:
 - IAM role will need SNS and CloudWatch permissions
 
 This is a very open IAM policy example:
-{
 
+{
     
     "Version": "2012-10-17",
     
