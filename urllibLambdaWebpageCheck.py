@@ -4,7 +4,7 @@
 # Run once to produce pageserver and htmlchar values for global variables.
 
 # Original from https://github.com/TacMechMonkey/urllib-lambda-webpage-check/edit/master/urllibLambdaWebpageCheck.py
-# Known issue: the code produces 2 emails for failures if in Lambda. https://stackoverflow.com/questions/51705061/lambda-boto3-python-issue
+# Known issue: Lambda/SNS produces 2 emails for failures if run in Lambda - https://stackoverflow.com/questions/51705061/lambda-boto3-python-issue
 
 # Import required modules
 import boto3
