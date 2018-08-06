@@ -1,5 +1,4 @@
 # Original from https://github.com/TacMechMonkey/urllib-lambda-webpage-check/edit/master/urllibLambdaWebpageCheck.py
-# Known issue: Lambda/SNS produces 2 emails for failures if run in Lambda - https://stackoverflow.com/questions/51705061/lambda-boto3-python-issue
 
 # This python/boto3/lambda script sends a request to an Office 365 landing page, parses return details to confirm a successful /
 # redirect to the organisation's ADFS homepage, authenticates homepage is correct, raises any errors, and sends a consolodated /
