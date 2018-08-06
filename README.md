@@ -6,25 +6,41 @@ confirms homepage is correct, raises any errors, and sends a consolodated report
 Requirements:
 - CloudWatch cron trigger every minute { 0/1 * * * ? * }
 - No VPC
-- 128mg, 10secs if sufficient
+- 128mb, 10secs is sufficient
 - IAM role will need SNS and CloudWatch permissions
 
 This is a very open IAM policy example:
 {
+
+    
     "Version": "2012-10-17",
+    
     "Statement": [
+    
         {
+        
             "Effect": "Allow",
+            
             "Action": "sns:Publish",
+            
             "Resource": "arn:aws:sns:ap-southeast-2:*"
+            
         },
+        
         {
+        
             "Effect": "Allow",
+            
             "Action": "logs:*",
+            
             "Resource": "arn:aws:logs:*:*:*"
+            
         }
+        
     ]
+    
 } 
+
 
 This was designed as a simple nightly check to automate a SysAdmin process.
 
