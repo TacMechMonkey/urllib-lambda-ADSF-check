@@ -9,7 +9,7 @@ Requirements:
 - 128mb, 10secs is sufficient
 - IAM role will need SNS and CloudWatch permissions
 
-This is a very open IAM policy example:
+IAM policy example:
 
 {
     
@@ -45,7 +45,3 @@ This is a very open IAM policy example:
 This was designed as a simple nightly check to automate a SysAdmin process.
 
 To confirm character count and server names, run the script once and pull details from the response.
-
-Still needs: URL/HTTPError.code + .reason in exception handling.
-
-Runs locally no probs. Known issue when run in Lambda, it notifies SNS twice when SNS is called - https://stackoverflow.com/questions/51705061/lambda-boto3-python-issue
